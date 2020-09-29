@@ -1,3 +1,8 @@
+### 1 npm init react-app projectapp01  
+### 2 npm install antd  
+### 3 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less' //index.js
+
+---  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -65,4 +70,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify  
+---
