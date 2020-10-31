@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from 'antd'
+import { Table, Button, Row, Col } from 'antd'
 const student = [{
   "first_name": "Nona",
   "last_name": "St. Hill",
@@ -41,19 +41,19 @@ const student = [{
 const columns = [
   {
     title: "ชื่อจริง",
-    dataIndex:'email'
+    dataIndex: 'email'
   },
   {
     title: 'เพศ',
-    dataIndex: 'gender'  
+    dataIndex: 'gender'
   },
   {
     title: 'นามสกุล',
-    dataIndex: 'last_name'  
+    dataIndex: 'last_name'
   },
   {
-    title:'มหาวิทยาลัย',
-    dataIndex:'university'
+    title: 'มหาวิทยาลัย',
+    dataIndex: 'university'
   }
 ]
 function AppDesign() {
@@ -61,7 +61,32 @@ function AppDesign() {
     <div>
       <h1>Test Ant AppDesign</h1>
       <div>
-        <Table columns={columns} dataSource={student} />
+        <Row justify="center">
+          <Col span={20}>
+            <Table columns={columns} dataSource={student} />
+          </Col>
+        </Row>
+      </div>
+      <Button >OK</Button>
+      <div>
+        <Row>
+          <Col span={24}>col</Col>
+        </Row>
+        <Row>
+          <Col span={12}>col-12</Col>
+          <Col span={12}>col-12</Col>
+        </Row>
+        <Row>
+          <Col span={8}>col-8</Col>
+          <Col span={8}>col-8</Col>
+          <Col span={8}>col-8</Col>
+        </Row>
+        <Row>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
       </div>
     </div>
   )

@@ -82,7 +82,7 @@ function App(){
   ]
   return (
     <div className="App">
-      Abt Design Table
+      Abt Design Table  
       <Row justify={"center"}>
         <Col xs={24} sm={22} md={20} lg={16} xl={14} xxl={12}>
           <Table bordered={true} columns={columns} dataSource={student} size={"small"}/>
